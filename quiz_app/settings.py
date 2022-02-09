@@ -45,9 +45,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'quiz_app.quizzes.apps.QuizzesConfig',
-    'quiz_app.questions',
-    'quiz_app.results',
+    'quizzes',
+    'questions',
+    'results',
 ]
 
 MIDDLEWARE = [
@@ -136,5 +136,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
-    BASE_DIR / 'quiz_app' / 'quizzes' / 'static',
+    BASE_DIR  / 'quizzes' / 'static',
 ]

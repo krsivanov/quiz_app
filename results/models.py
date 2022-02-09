@@ -2,7 +2,7 @@ import imp
 from statistics import mode
 from django.db import models
 
-from quiz_app.quizzes.models import Quiz
+from quizzes.models import Quiz
 from django.contrib.auth.models import User
 
 # Create your models here.

@@ -2,7 +2,7 @@ from pyexpat import model
 from statistics import mode
 from django.db import models
 
-from quiz_app.quizzes.models import Quiz
+from quizzes.models import Quiz
 
 # Create your models here.
 class Question(models.Model):
