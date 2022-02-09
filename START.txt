@@ -3,3 +3,6 @@ watch?v=T9xOjVJI1rg
 20:46
 
 quiz.js
+
+
+SECRET_KEY = 'django-insecure-12@gyz#l6t8*8+j$1df08rldls+=oet9k2w7w&y=kzg&hzbv*o'
