@@ -1,4 +1,4 @@
-console.log('js connected')
+console.log('main connected')
 
 const modalBtns = [... document.getElementsByClassName('modal-button')]
 const modalBody = document.getElementById('modal-body-confirm')
