@@ -1,8 +1,8 @@
-watch?v=T9xOjVJI1rg
+/watch?v=7ipKESX4mO8&ab_channel=Pyplane
 
-20:46
+4:04
 
 quiz.js
+|
+views.py
 
-
-SECRET_KEY = 'django-insecure-12@gyz#l6t8*8+j$1df08rldls+=oet9k2w7w&y=kzg&hzbv*o'

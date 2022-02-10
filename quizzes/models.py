@@ -1,5 +1,6 @@
 from statistics import mode
 from django.db import models
+import random
 
 # Create your models here.
 # DIFF_CHOICES = (
@@ -30,7 +31,9 @@ class Quiz(models.Model):
         return f'{self.name} - {self.topic}'
 
     def get_questions(self):
-        return self.question_set.all()[:self.number_of_questions]
+        questions = list(self.question_set.all())
+        random.shuffle(questions)
+        return questions[:self.number_of_questions]
 
     class Meta:
         verbose_name_plural = 'Quizes'
