@@ -28,3 +28,10 @@ def quiz_data_view(request, pk):
         'data' : questions,
         'time' : quiz.time
     })
+    
+def save_quiz_view(request, pk):
+    # print(request.POST)
+    if request.is_ajax():
+        data = request.POST
+        print(type(data))
+    return JsonResponse({'text': 'works'})

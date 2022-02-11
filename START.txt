@@ -1,8 +1,6 @@
 /watch?v=7ipKESX4mO8&ab_channel=Pyplane
 
-4:04
+17:03
 
-quiz.js
-|
 views.py
 
