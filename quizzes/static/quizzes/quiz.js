@@ -58,7 +58,10 @@ const sendData = () => {
         url: `${url}save/`,
         data: data,
         success: function(response){
-            console.log(response)
+            // console.log(response)
+            const results = response.results
+            console.log(results);
+            quizForm.classList.add('not-visible')
         },
         error: function(error){
             console.log(error);
