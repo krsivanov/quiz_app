@@ -60,8 +60,32 @@ const sendData = () => {
         success: function(response){
             // console.log(response)
             const results = response.results
-            console.log(results);
+            console.log(results)
             quizForm.classList.add('not-visible')
+
+            results.forEach(res =>{
+                const resDiv = document.createElement("div")
+                for (const [question, resp] of Object.entries(res)){
+                    // console.log(question);
+                    // console.log(resp);
+                    // console.log('********************');
+                    
+                    resDiv.innerHTML += question
+                    const cls = ['container', 'p-3', 'text-light', 'h3']
+                    resDiv.classList.add(...cls)
+
+                    if (resp=='not answered'){
+                        resDiv.innerHTML += '- not answered'
+                        resDiv.classList.add('bg-danger')
+                    }
+                    else {
+                        const answer = resp['answered']
+                        const correct = resp['correct_answer']
+
+                        console.log(answer, correct)
+                    }
+                }
+            })
         },
         error: function(error){
             console.log(error);
