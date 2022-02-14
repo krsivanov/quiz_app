@@ -82,9 +82,18 @@ const sendData = () => {
                         const answer = resp['answered']
                         const correct = resp['correct_answer']
 
-                        console.log(answer, correct)
+                        if (answer == correct){
+                            resDiv.classList.add('bg-success')
+                            resDiv.innerHTML += `answered: ${answer}`
+                        } else {
+                            resDiv.classList.add('bg-danger')
+                            resDiv.innerHTML += ` | correct answer: ${correct}`
+                            resDiv.innerHTML += ` | answered: ${answer}`
+                        }
                     }
                 }
+                const body = document.getElementsByTagName('BODY')[0]
+                body.append(resDiv)
             })
         },
         error: function(error){
