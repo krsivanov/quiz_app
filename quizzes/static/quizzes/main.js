@@ -18,10 +18,10 @@ modalBtns.forEach(modalBtn=> modalBtn.addEventListener('click', ()=>{
         <div class="h5 mb-3">Сигурен ли си, че искаш да започнеш "<b>${name}</b>"?</div>
         <div class="text-muted">
             <ul>
-                <li>diffiuclty: <b>${difficulty}<b></li>
-                <li>number of quiestions: <b>${numQuestions}<b></li>
-                <li>score to pass: <b>${scoreToPass}%<b></li>
-                <li>time: <b>${time}<b></li>
+                <li>трудност: <b>${difficulty}<b></li>
+                <li>брой въпроси: <b>${numQuestions}<b></li>
+                <li>необходими брой верни отговори: <b>${scoreToPass}%<b></li>
+                <li>време: <b>${time}<b></li>
             </ul>
         </div>
     `
