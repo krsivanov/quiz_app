@@ -6,7 +6,7 @@ from quizzes.models import Quiz
 
 # Create your models here.
 class Question(models.Model):
-    text = models.CharField(max_length=200)
+    text = models.CharField(max_length=350)
     quiz = models.ForeignKey(Quiz, on_delete=models.CASCADE)
     created = models.DateTimeField(auto_now_add=True)
     
@@ -19,7 +19,7 @@ class Question(models.Model):
 
 
 class Answer(models.Model):
-    text = models.CharField(max_length=200)
+    text = models.CharField(max_length=350)
     correct = models.BooleanField(default=False)
     question = models.ForeignKey(Question, on_delete=models.CASCADE,)# it can be done with related_name='answers')
     created = models.DateTimeField(auto_now_add=True)
